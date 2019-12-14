@@ -50,5 +50,5 @@ QuickViewOnFpRenderMedium::QuickViewOnFpRenderMedium(fp::IRenderMedium* pRenderM
 
 void QuickViewOnFpRenderMedium::setSource(const QString& source)
 {
-    fboQuickView.setSource(QUrl::fromLocalFile(source));
+    fboQuickView.setSource(source);
 }

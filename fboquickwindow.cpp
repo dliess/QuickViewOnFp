@@ -89,7 +89,9 @@ void FboQuickWindowPrivate::sceneGraphInitialized()
     Q_ASSERT(!fbo);
 
     fbo = new QOpenGLFramebufferObject(QSize(1, 1).expandedTo(q->size()),
-                                       QOpenGLFramebufferObject::CombinedDepthStencil);
+                                       QOpenGLFramebufferObject::CombinedDepthStencil,
+                                       GL_TEXTURE_2D,
+                                       GL_RGBA8);
     q->setRenderTarget(fbo);
 }
 

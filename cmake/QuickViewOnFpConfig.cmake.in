@@ -1,0 +1,9 @@
+get_filename_component(QuickViewOnFp_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+find_dependency(FrontPanelIO REQUIRED)
+find_dependency(Qt5 5.11.3 COMPONENTS Core REQUIRED)
+
+if(NOT TARGET QuickViewOnFp::QuickViewOnFp)
+    include("${QuickViewOnFp_CMAKE_DIR}/@PROJECT_NAME@-targets.cmake")
+endif()

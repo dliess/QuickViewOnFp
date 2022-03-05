@@ -6,6 +6,8 @@ project(QuickViewOnFp
         VERSION 0.0.1
         LANGUAGES CXX)
 
+include(GNUInstallDirs)
+
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)

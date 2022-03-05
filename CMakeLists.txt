@@ -57,7 +57,7 @@ target_link_libraries(${TARGET_NAME}
 )
 
 set_target_properties(${TARGET_NAME} PROPERTIES
-    PUBLIC_HEADER "${PUBLIC_HEADERS}"
+    PUBLIC_HEADER "${HEADERS}"
 )
 
 install(TARGETS ${TARGET_NAME}  EXPORT ${PROJECT_NAME}-targets
